@@ -8,7 +8,7 @@ The component is intended for integration with:
 - Spatial Sketchpad
 - AutoCAD, through the LayerHerder/AcadBridgeKit integration pattern
 
-The project is currently in workflow and design-definition. See [`docs/design-brief.md`](docs/design-brief.md).
+The project is currently in workflow and design-definition. See the [design brief](docs/design-brief.md) and [workplan](docs/workplan.md).
 
 ## Design goals
 
