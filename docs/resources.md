@@ -58,7 +58,16 @@ This register records external resources that StairPlanner can reuse or align wi
 - **Use:** Reference if StairPlanner later needs a general constraint-programming engine to rank alternatives across many discrete variables.
 - **StairPlanner treatment:** The first solver should remain deterministic and explainable without this dependency. Reconsider CP-SAT only after profiling real multi-run cases and documenting the limitations of the simpler search.
 
-## 6. How resources enter the project
+## 6. UI toolkit candidates
+
+### Raven (oscar-soirey)
+
+- **Resource:** [oscar-soirey/Raven](https://github.com/oscar-soirey/Raven) ([releases](https://github.com/oscar-soirey/Raven/releases), [site](https://oscar-soirey.github.io/Raven/))
+- **License:** Apache-2.0, as identified by the repository.
+- **Use:** Lightweight C GUI library for editors and tools (retained-mode widget tree, XML layouts, docking, text editor, node graph, timeline, Vulkan renderer) with a Rust binding. Not related to mjishnu/Raven, a Microsoft Store client.
+- **StairPlanner treatment:** Experimental only, to compare against egui/Spatial UI Kit. Not a dependency and not a decision. Pre-1.0 (0.2.x at 2026-11-06) with an unstable public API; its Rust binding is a thin `unsafe` FFI wrapper over C. Reviewed 2026-11-06 from the README only, not built or run.
+
+## 7. How resources enter the project
 
 Each adopted external rule or mapping should have:
 
